@@ -14,6 +14,9 @@ requirejs.config({
         'backbone-mvc': 'js/lib/backbone-mvc',
         'handlebars': 'js/lib/handlebars.runtime',
 
+        'figue': 'js/lib/figue',
+        'd3': 'js/lib/d3.v3.min',
+
         // Plugins
         'text': 'js/lib/text',
         'css': 'js/lib/css'
@@ -35,6 +38,13 @@ requirejs.config({
         },
         'handlebars': {
             exports: 'Handlebars'
+        },
+
+        'figue': {
+            exports: 'figue'
+        },
+        'd3': {
+            exports: 'd3'
         }
     }
 });
