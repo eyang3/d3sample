@@ -14,8 +14,8 @@ requirejs.config({
         'backbone-mvc': 'js/lib/backbone-mvc',
         'handlebars': 'js/lib/handlebars.runtime',
 
-        'figue': 'js/lib/figue',
         'd3': 'js/lib/d3.v3.min',
+        'figue': 'js/lib/figue',
 
         // Plugins
         'text': 'js/lib/text',
@@ -40,22 +40,22 @@ requirejs.config({
             exports: 'Handlebars'
         },
 
-        'figue': {
-            exports: 'figue'
-        },
         'd3': {
             exports: 'd3'
+        },
+        'figue': {
+            exports: 'figue'
         }
     }
 });
 
-require(['backbone', 'backbone-mvc', 'js/controllers/RadialCtrl'], function(Backbone, BackboneMVC, RadialCtrl) {
+require(['backbone', 'backbone-mvc', 'js/controllers/TrellisCtrl', 'js/controllers/RadialCtrl'], function(Backbone, BackboneMVC, TrellisCtrl, RadialCtrl) {
     $(document).ready(function() {
         // Start the new automatic router and Backbone.history.
         var router = new BackboneMVC.Router();
         Backbone.history.start();
         // Just invoke controllers to create whole app.
+        var trellisCtrl = new TrellisCtrl();
         var radialCtrl = new RadialCtrl();
-        //var trellisCtrl = new TrellisCtrl();
     });
 });

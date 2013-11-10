@@ -1,22 +1,29 @@
 /**
  * TrellisCtrl
  *
- * Usage: var appCtrl = new TrellisCtrl();
  * @return {object}
  */
 
-define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(BackboneMVC, AppModel, AppView) {
+define(['d3', 'backbone-mvc', 'js/views/TrellisView', 'js/models/IrisModel'], function(d3, BackboneMVC, TrellisView, IrisModel) {
     var TrellisCtrl = BackboneMVC.Controller.extend({
         name: 'TrellisCtrl',
         /* the only mandatory field */
 
+        model: null,
+        view: null,
+
         initialize: function() {
-            var appModel = new AppModel({html: 'Hello kicks'});
-            var appView = new AppView({
-                model: appModel,
-                el: $('#kicks')
+            var self = this;
+
+            d3.json('/iris/find/', function(error, data) {
+                self.model = new IrisModel(data[0].iris);
+                self.view = new TrellisView({
+                    model: self.model,
+                    el: $('#trellis')
+                });
+                self.view.render();
             });
-            appView.render();
+
         },
 
         /**
@@ -24,7 +31,7 @@ define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(Back
          * automatically if url matches
          */
         hello: function() {
-           this._privateMethod();
+            this._privateMethod();
         },
 
         /**

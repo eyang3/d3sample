@@ -1,1504 +1,1054 @@
 {
   "iris": [
     {
-      "label": "data0",
-      "x": "5.1",
-      "y": "3.5"
+      "sepal length": "5.1",
+      "sepal width": "3.5",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data2",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "4.9",
+      "sepal width": "3.0",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data4",
-      "x": "4.9",
-      "y": "3.0"
+      "sepal length": "4.7",
+      "sepal width": "3.2",
+      "petal length": "1.3",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data6",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "4.6",
+      "sepal width": "3.1",
+      "petal length": "1.5",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data8",
-      "x": "4.7",
-      "y": "3.2"
+      "sepal length": "5.0",
+      "sepal width": "3.6",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data10",
-      "x": "1.3",
-      "y": "0.2"
+      "sepal length": "5.4",
+      "sepal width": "3.9",
+      "petal length": "1.7",
+      "petal width": "0.4",
+      "species": "setosa"
     },
     {
-      "label": "data12",
-      "x": "4.6",
-      "y": "3.1"
+      "sepal length": "4.6",
+      "sepal width": "3.4",
+      "petal length": "1.4",
+      "petal width": "0.3",
+      "species": "setosa"
     },
     {
-      "label": "data14",
-      "x": "1.5",
-      "y": "0.2"
+      "sepal length": "5.0",
+      "sepal width": "3.4",
+      "petal length": "1.5",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data16",
-      "x": "5.0",
-      "y": "3.6"
+      "sepal length": "4.4",
+      "sepal width": "2.9",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data18",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "4.9",
+      "sepal width": "3.1",
+      "petal length": "1.5",
+      "petal width": "0.1",
+      "species": "setosa"
     },
     {
-      "label": "data20",
-      "x": "5.4",
-      "y": "3.9"
+      "sepal length": "5.4",
+      "sepal width": "3.7",
+      "petal length": "1.5",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data22",
-      "x": "1.7",
-      "y": "0.4"
+      "sepal length": "4.8",
+      "sepal width": "3.4",
+      "petal length": "1.6",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data24",
-      "x": "4.6",
-      "y": "3.4"
+      "sepal length": "4.8",
+      "sepal width": "3.0",
+      "petal length": "1.4",
+      "petal width": "0.1",
+      "species": "setosa"
     },
     {
-      "label": "data26",
-      "x": "1.4",
-      "y": "0.3"
+      "sepal length": "4.3",
+      "sepal width": "3.0",
+      "petal length": "1.1",
+      "petal width": "0.1",
+      "species": "setosa"
     },
     {
-      "label": "data28",
-      "x": "5.0",
-      "y": "3.4"
+      "sepal length": "5.8",
+      "sepal width": "4.0",
+      "petal length": "1.2",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data30",
-      "x": "1.5",
-      "y": "0.2"
+      "sepal length": "5.7",
+      "sepal width": "4.4",
+      "petal length": "1.5",
+      "petal width": "0.4",
+      "species": "setosa"
     },
     {
-      "label": "data32",
-      "x": "4.4",
-      "y": "2.9"
+      "sepal length": "5.4",
+      "sepal width": "3.9",
+      "petal length": "1.3",
+      "petal width": "0.4",
+      "species": "setosa"
     },
     {
-      "label": "data34",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "5.1",
+      "sepal width": "3.5",
+      "petal length": "1.4",
+      "petal width": "0.3",
+      "species": "setosa"
     },
     {
-      "label": "data36",
-      "x": "4.9",
-      "y": "3.1"
+      "sepal length": "5.7",
+      "sepal width": "3.8",
+      "petal length": "1.7",
+      "petal width": "0.3",
+      "species": "setosa"
     },
     {
-      "label": "data38",
-      "x": "1.5",
-      "y": "0.1"
+      "sepal length": "5.1",
+      "sepal width": "3.8",
+      "petal length": "1.5",
+      "petal width": "0.3",
+      "species": "setosa"
     },
     {
-      "label": "data40",
-      "x": "5.4",
-      "y": "3.7"
+      "sepal length": "5.4",
+      "sepal width": "3.4",
+      "petal length": "1.7",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data42",
-      "x": "1.5",
-      "y": "0.2"
+      "sepal length": "5.1",
+      "sepal width": "3.7",
+      "petal length": "1.5",
+      "petal width": "0.4",
+      "species": "setosa"
     },
     {
-      "label": "data44",
-      "x": "4.8",
-      "y": "3.4"
+      "sepal length": "4.6",
+      "sepal width": "3.6",
+      "petal length": "1.0",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data46",
-      "x": "1.6",
-      "y": "0.2"
+      "sepal length": "5.1",
+      "sepal width": "3.3",
+      "petal length": "1.7",
+      "petal width": "0.5",
+      "species": "setosa"
     },
     {
-      "label": "data48",
-      "x": "4.8",
-      "y": "3.0"
+      "sepal length": "4.8",
+      "sepal width": "3.4",
+      "petal length": "1.9",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data50",
-      "x": "1.4",
-      "y": "0.1"
+      "sepal length": "5.0",
+      "sepal width": "3.0",
+      "petal length": "1.6",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data52",
-      "x": "4.3",
-      "y": "3.0"
+      "sepal length": "5.0",
+      "sepal width": "3.4",
+      "petal length": "1.6",
+      "petal width": "0.4",
+      "species": "setosa"
     },
     {
-      "label": "data54",
-      "x": "1.1",
-      "y": "0.1"
+      "sepal length": "5.2",
+      "sepal width": "3.5",
+      "petal length": "1.5",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data56",
-      "x": "5.8",
-      "y": "4.0"
+      "sepal length": "5.2",
+      "sepal width": "3.4",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data58",
-      "x": "1.2",
-      "y": "0.2"
+      "sepal length": "4.7",
+      "sepal width": "3.2",
+      "petal length": "1.6",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data60",
-      "x": "5.7",
-      "y": "4.4"
+      "sepal length": "4.8",
+      "sepal width": "3.1",
+      "petal length": "1.6",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data62",
-      "x": "1.5",
-      "y": "0.4"
+      "sepal length": "5.4",
+      "sepal width": "3.4",
+      "petal length": "1.5",
+      "petal width": "0.4",
+      "species": "setosa"
     },
     {
-      "label": "data64",
-      "x": "5.4",
-      "y": "3.9"
+      "sepal length": "5.2",
+      "sepal width": "4.1",
+      "petal length": "1.5",
+      "petal width": "0.1",
+      "species": "setosa"
     },
     {
-      "label": "data66",
-      "x": "1.3",
-      "y": "0.4"
+      "sepal length": "5.5",
+      "sepal width": "4.2",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data68",
-      "x": "5.1",
-      "y": "3.5"
+      "sepal length": "4.9",
+      "sepal width": "3.1",
+      "petal length": "1.5",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data70",
-      "x": "1.4",
-      "y": "0.3"
+      "sepal length": "5.0",
+      "sepal width": "3.2",
+      "petal length": "1.2",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data72",
-      "x": "5.7",
-      "y": "3.8"
+      "sepal length": "5.5",
+      "sepal width": "3.5",
+      "petal length": "1.3",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data74",
-      "x": "1.7",
-      "y": "0.3"
+      "sepal length": "4.9",
+      "sepal width": "3.6",
+      "petal length": "1.4",
+      "petal width": "0.1",
+      "species": "setosa"
     },
     {
-      "label": "data76",
-      "x": "5.1",
-      "y": "3.8"
+      "sepal length": "4.4",
+      "sepal width": "3.0",
+      "petal length": "1.3",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data78",
-      "x": "1.5",
-      "y": "0.3"
+      "sepal length": "5.1",
+      "sepal width": "3.4",
+      "petal length": "1.5",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data80",
-      "x": "5.4",
-      "y": "3.4"
+      "sepal length": "5.0",
+      "sepal width": "3.5",
+      "petal length": "1.3",
+      "petal width": "0.3",
+      "species": "setosa"
     },
     {
-      "label": "data82",
-      "x": "1.7",
-      "y": "0.2"
+      "sepal length": "4.5",
+      "sepal width": "2.3",
+      "petal length": "1.3",
+      "petal width": "0.3",
+      "species": "setosa"
     },
     {
-      "label": "data84",
-      "x": "5.1",
-      "y": "3.7"
+      "sepal length": "4.4",
+      "sepal width": "3.2",
+      "petal length": "1.3",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data86",
-      "x": "1.5",
-      "y": "0.4"
+      "sepal length": "5.0",
+      "sepal width": "3.5",
+      "petal length": "1.6",
+      "petal width": "0.6",
+      "species": "setosa"
     },
     {
-      "label": "data88",
-      "x": "4.6",
-      "y": "3.6"
+      "sepal length": "5.1",
+      "sepal width": "3.8",
+      "petal length": "1.9",
+      "petal width": "0.4",
+      "species": "setosa"
     },
     {
-      "label": "data90",
-      "x": "1.0",
-      "y": "0.2"
+      "sepal length": "4.8",
+      "sepal width": "3.0",
+      "petal length": "1.4",
+      "petal width": "0.3",
+      "species": "setosa"
     },
     {
-      "label": "data92",
-      "x": "5.1",
-      "y": "3.3"
+      "sepal length": "5.1",
+      "sepal width": "3.8",
+      "petal length": "1.6",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data94",
-      "x": "1.7",
-      "y": "0.5"
+      "sepal length": "4.6",
+      "sepal width": "3.2",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data96",
-      "x": "4.8",
-      "y": "3.4"
+      "sepal length": "5.3",
+      "sepal width": "3.7",
+      "petal length": "1.5",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data98",
-      "x": "1.9",
-      "y": "0.2"
+      "sepal length": "5.0",
+      "sepal width": "3.3",
+      "petal length": "1.4",
+      "petal width": "0.2",
+      "species": "setosa"
     },
     {
-      "label": "data100",
-      "x": "5.0",
-      "y": "3.0"
+      "sepal length": "7.0",
+      "sepal width": "3.2",
+      "petal length": "4.7",
+      "petal width": "1.4",
+      "species": "versicolor"
     },
     {
-      "label": "data102",
-      "x": "1.6",
-      "y": "0.2"
+      "sepal length": "6.4",
+      "sepal width": "3.2",
+      "petal length": "4.5",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data104",
-      "x": "5.0",
-      "y": "3.4"
+      "sepal length": "6.9",
+      "sepal width": "3.1",
+      "petal length": "4.9",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data106",
-      "x": "1.6",
-      "y": "0.4"
+      "sepal length": "5.5",
+      "sepal width": "2.3",
+      "petal length": "4.0",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data108",
-      "x": "5.2",
-      "y": "3.5"
+      "sepal length": "6.5",
+      "sepal width": "2.8",
+      "petal length": "4.6",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data110",
-      "x": "1.5",
-      "y": "0.2"
+      "sepal length": "5.7",
+      "sepal width": "2.8",
+      "petal length": "4.5",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data112",
-      "x": "5.2",
-      "y": "3.4"
+      "sepal length": "6.3",
+      "sepal width": "3.3",
+      "petal length": "4.7",
+      "petal width": "1.6",
+      "species": "versicolor"
     },
     {
-      "label": "data114",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "4.9",
+      "sepal width": "2.4",
+      "petal length": "3.3",
+      "petal width": "1.0",
+      "species": "versicolor"
     },
     {
-      "label": "data116",
-      "x": "4.7",
-      "y": "3.2"
+      "sepal length": "6.6",
+      "sepal width": "2.9",
+      "petal length": "4.6",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data118",
-      "x": "1.6",
-      "y": "0.2"
+      "sepal length": "5.2",
+      "sepal width": "2.7",
+      "petal length": "3.9",
+      "petal width": "1.4",
+      "species": "versicolor"
     },
     {
-      "label": "data120",
-      "x": "4.8",
-      "y": "3.1"
+      "sepal length": "5.0",
+      "sepal width": "2.0",
+      "petal length": "3.5",
+      "petal width": "1.0",
+      "species": "versicolor"
     },
     {
-      "label": "data122",
-      "x": "1.6",
-      "y": "0.2"
+      "sepal length": "5.9",
+      "sepal width": "3.0",
+      "petal length": "4.2",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data124",
-      "x": "5.4",
-      "y": "3.4"
+      "sepal length": "6.0",
+      "sepal width": "2.2",
+      "petal length": "4.0",
+      "petal width": "1.0",
+      "species": "versicolor"
     },
     {
-      "label": "data126",
-      "x": "1.5",
-      "y": "0.4"
+      "sepal length": "6.1",
+      "sepal width": "2.9",
+      "petal length": "4.7",
+      "petal width": "1.4",
+      "species": "versicolor"
     },
     {
-      "label": "data128",
-      "x": "5.2",
-      "y": "4.1"
+      "sepal length": "5.6",
+      "sepal width": "2.9",
+      "petal length": "3.6",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data130",
-      "x": "1.5",
-      "y": "0.1"
+      "sepal length": "6.7",
+      "sepal width": "3.1",
+      "petal length": "4.4",
+      "petal width": "1.4",
+      "species": "versicolor"
     },
     {
-      "label": "data132",
-      "x": "5.5",
-      "y": "4.2"
+      "sepal length": "5.6",
+      "sepal width": "3.0",
+      "petal length": "4.5",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data134",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "5.8",
+      "sepal width": "2.7",
+      "petal length": "4.1",
+      "petal width": "1.0",
+      "species": "versicolor"
     },
     {
-      "label": "data136",
-      "x": "4.9",
-      "y": "3.1"
+      "sepal length": "6.2",
+      "sepal width": "2.2",
+      "petal length": "4.5",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data138",
-      "x": "1.5",
-      "y": "0.1"
+      "sepal length": "5.6",
+      "sepal width": "2.5",
+      "petal length": "3.9",
+      "petal width": "1.1",
+      "species": "versicolor"
     },
     {
-      "label": "data140",
-      "x": "5.0",
-      "y": "3.2"
+      "sepal length": "5.9",
+      "sepal width": "3.2",
+      "petal length": "4.8",
+      "petal width": "1.8",
+      "species": "versicolor"
     },
     {
-      "label": "data142",
-      "x": "1.2",
-      "y": "0.2"
+      "sepal length": "6.1",
+      "sepal width": "2.8",
+      "petal length": "4.0",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data144",
-      "x": "5.5",
-      "y": "3.5"
+      "sepal length": "6.3",
+      "sepal width": "2.5",
+      "petal length": "4.9",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data146",
-      "x": "1.3",
-      "y": "0.2"
+      "sepal length": "6.1",
+      "sepal width": "2.8",
+      "petal length": "4.7",
+      "petal width": "1.2",
+      "species": "versicolor"
     },
     {
-      "label": "data148",
-      "x": "4.9",
-      "y": "3.1"
+      "sepal length": "6.4",
+      "sepal width": "2.9",
+      "petal length": "4.3",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data150",
-      "x": "1.5",
-      "y": "0.1"
+      "sepal length": "6.6",
+      "sepal width": "3.0",
+      "petal length": "4.4",
+      "petal width": "1.4",
+      "species": "versicolor"
     },
     {
-      "label": "data152",
-      "x": "4.4",
-      "y": "3.0"
+      "sepal length": "6.8",
+      "sepal width": "2.8",
+      "petal length": "4.8",
+      "petal width": "1.4",
+      "species": "versicolor"
     },
     {
-      "label": "data154",
-      "x": "1.3",
-      "y": "0.2"
+      "sepal length": "6.7",
+      "sepal width": "3.0",
+      "petal length": "5.0",
+      "petal width": "1.7",
+      "species": "versicolor"
     },
     {
-      "label": "data156",
-      "x": "5.1",
-      "y": "3.4"
+      "sepal length": "6.0",
+      "sepal width": "2.9",
+      "petal length": "4.5",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data158",
-      "x": "1.5",
-      "y": "0.2"
+      "sepal length": "5.7",
+      "sepal width": "2.6",
+      "petal length": "3.5",
+      "petal width": "1.0",
+      "species": "versicolor"
     },
     {
-      "label": "data160",
-      "x": "5.0",
-      "y": "3.5"
+      "sepal length": "5.5",
+      "sepal width": "2.4",
+      "petal length": "3.8",
+      "petal width": "1.1",
+      "species": "versicolor"
     },
     {
-      "label": "data162",
-      "x": "1.3",
-      "y": "0.3"
+      "sepal length": "5.5",
+      "sepal width": "2.4",
+      "petal length": "3.7",
+      "petal width": "1.0",
+      "species": "versicolor"
     },
     {
-      "label": "data164",
-      "x": "4.5",
-      "y": "2.3"
+      "sepal length": "5.8",
+      "sepal width": "2.7",
+      "petal length": "3.9",
+      "petal width": "1.2",
+      "species": "versicolor"
     },
     {
-      "label": "data166",
-      "x": "1.3",
-      "y": "0.3"
+      "sepal length": "6.0",
+      "sepal width": "2.7",
+      "petal length": "5.1",
+      "petal width": "1.6",
+      "species": "versicolor"
     },
     {
-      "label": "data168",
-      "x": "4.4",
-      "y": "3.2"
+      "sepal length": "5.4",
+      "sepal width": "3.0",
+      "petal length": "4.5",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data170",
-      "x": "1.3",
-      "y": "0.2"
+      "sepal length": "6.0",
+      "sepal width": "3.4",
+      "petal length": "4.5",
+      "petal width": "1.6",
+      "species": "versicolor"
     },
     {
-      "label": "data172",
-      "x": "5.0",
-      "y": "3.5"
+      "sepal length": "6.7",
+      "sepal width": "3.1",
+      "petal length": "4.7",
+      "petal width": "1.5",
+      "species": "versicolor"
     },
     {
-      "label": "data174",
-      "x": "1.6",
-      "y": "0.6"
+      "sepal length": "6.3",
+      "sepal width": "2.3",
+      "petal length": "4.4",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data176",
-      "x": "5.1",
-      "y": "3.8"
+      "sepal length": "5.6",
+      "sepal width": "3.0",
+      "petal length": "4.1",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data178",
-      "x": "1.9",
-      "y": "0.4"
+      "sepal length": "5.5",
+      "sepal width": "2.5",
+      "petal length": "4.0",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data180",
-      "x": "4.8",
-      "y": "3.0"
+      "sepal length": "5.5",
+      "sepal width": "2.6",
+      "petal length": "4.4",
+      "petal width": "1.2",
+      "species": "versicolor"
     },
     {
-      "label": "data182",
-      "x": "1.4",
-      "y": "0.3"
+      "sepal length": "6.1",
+      "sepal width": "3.0",
+      "petal length": "4.6",
+      "petal width": "1.4",
+      "species": "versicolor"
     },
     {
-      "label": "data184",
-      "x": "5.1",
-      "y": "3.8"
+      "sepal length": "5.8",
+      "sepal width": "2.6",
+      "petal length": "4.0",
+      "petal width": "1.2",
+      "species": "versicolor"
     },
     {
-      "label": "data186",
-      "x": "1.6",
-      "y": "0.2"
+      "sepal length": "5.0",
+      "sepal width": "2.3",
+      "petal length": "3.3",
+      "petal width": "1.0",
+      "species": "versicolor"
     },
     {
-      "label": "data188",
-      "x": "4.6",
-      "y": "3.2"
+      "sepal length": "5.6",
+      "sepal width": "2.7",
+      "petal length": "4.2",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data190",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "5.7",
+      "sepal width": "3.0",
+      "petal length": "4.2",
+      "petal width": "1.2",
+      "species": "versicolor"
     },
     {
-      "label": "data192",
-      "x": "5.3",
-      "y": "3.7"
+      "sepal length": "5.7",
+      "sepal width": "2.9",
+      "petal length": "4.2",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data194",
-      "x": "1.5",
-      "y": "0.2"
+      "sepal length": "6.2",
+      "sepal width": "2.9",
+      "petal length": "4.3",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data196",
-      "x": "5.0",
-      "y": "3.3"
+      "sepal length": "5.1",
+      "sepal width": "2.5",
+      "petal length": "3.0",
+      "petal width": "1.1",
+      "species": "versicolor"
     },
     {
-      "label": "data198",
-      "x": "1.4",
-      "y": "0.2"
+      "sepal length": "5.7",
+      "sepal width": "2.8",
+      "petal length": "4.1",
+      "petal width": "1.3",
+      "species": "versicolor"
     },
     {
-      "label": "data200",
-      "x": "7.0",
-      "y": "3.2"
+      "sepal length": "6.3",
+      "sepal width": "3.3",
+      "petal length": "6.0",
+      "petal width": "2.5",
+      "species": "virginica"
     },
     {
-      "label": "data202",
-      "x": "4.7",
-      "y": "1.4"
+      "sepal length": "5.8",
+      "sepal width": "2.7",
+      "petal length": "5.1",
+      "petal width": "1.9",
+      "species": "virginica"
     },
     {
-      "label": "data204",
-      "x": "6.4",
-      "y": "3.2"
+      "sepal length": "7.1",
+      "sepal width": "3.0",
+      "petal length": "5.9",
+      "petal width": "2.1",
+      "species": "virginica"
     },
     {
-      "label": "data206",
-      "x": "4.5",
-      "y": "1.5"
+      "sepal length": "6.3",
+      "sepal width": "2.9",
+      "petal length": "5.6",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data208",
-      "x": "6.9",
-      "y": "3.1"
+      "sepal length": "6.5",
+      "sepal width": "3.0",
+      "petal length": "5.8",
+      "petal width": "2.2",
+      "species": "virginica"
     },
     {
-      "label": "data210",
-      "x": "4.9",
-      "y": "1.5"
+      "sepal length": "7.6",
+      "sepal width": "3.0",
+      "petal length": "6.6",
+      "petal width": "2.1",
+      "species": "virginica"
     },
     {
-      "label": "data212",
-      "x": "5.5",
-      "y": "2.3"
+      "sepal length": "4.9",
+      "sepal width": "2.5",
+      "petal length": "4.5",
+      "petal width": "1.7",
+      "species": "virginica"
     },
     {
-      "label": "data214",
-      "x": "4.0",
-      "y": "1.3"
+      "sepal length": "7.3",
+      "sepal width": "2.9",
+      "petal length": "6.3",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data216",
-      "x": "6.5",
-      "y": "2.8"
+      "sepal length": "6.7",
+      "sepal width": "2.5",
+      "petal length": "5.8",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data218",
-      "x": "4.6",
-      "y": "1.5"
+      "sepal length": "7.2",
+      "sepal width": "3.6",
+      "petal length": "6.1",
+      "petal width": "2.5",
+      "species": "virginica"
     },
     {
-      "label": "data220",
-      "x": "5.7",
-      "y": "2.8"
+      "sepal length": "6.5",
+      "sepal width": "3.2",
+      "petal length": "5.1",
+      "petal width": "2.0",
+      "species": "virginica"
     },
     {
-      "label": "data222",
-      "x": "4.5",
-      "y": "1.3"
+      "sepal length": "6.4",
+      "sepal width": "2.7",
+      "petal length": "5.3",
+      "petal width": "1.9",
+      "species": "virginica"
     },
     {
-      "label": "data224",
-      "x": "6.3",
-      "y": "3.3"
+      "sepal length": "6.8",
+      "sepal width": "3.0",
+      "petal length": "5.5",
+      "petal width": "2.1",
+      "species": "virginica"
     },
     {
-      "label": "data226",
-      "x": "4.7",
-      "y": "1.6"
+      "sepal length": "5.7",
+      "sepal width": "2.5",
+      "petal length": "5.0",
+      "petal width": "2.0",
+      "species": "virginica"
     },
     {
-      "label": "data228",
-      "x": "4.9",
-      "y": "2.4"
+      "sepal length": "5.8",
+      "sepal width": "2.8",
+      "petal length": "5.1",
+      "petal width": "2.4",
+      "species": "virginica"
     },
     {
-      "label": "data230",
-      "x": "3.3",
-      "y": "1.0"
+      "sepal length": "6.4",
+      "sepal width": "3.2",
+      "petal length": "5.3",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data232",
-      "x": "6.6",
-      "y": "2.9"
+      "sepal length": "6.5",
+      "sepal width": "3.0",
+      "petal length": "5.5",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data234",
-      "x": "4.6",
-      "y": "1.3"
+      "sepal length": "7.7",
+      "sepal width": "3.8",
+      "petal length": "6.7",
+      "petal width": "2.2",
+      "species": "virginica"
     },
     {
-      "label": "data236",
-      "x": "5.2",
-      "y": "2.7"
+      "sepal length": "7.7",
+      "sepal width": "2.6",
+      "petal length": "6.9",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data238",
-      "x": "3.9",
-      "y": "1.4"
+      "sepal length": "6.0",
+      "sepal width": "2.2",
+      "petal length": "5.0",
+      "petal width": "1.5",
+      "species": "virginica"
     },
     {
-      "label": "data240",
-      "x": "5.0",
-      "y": "2.0"
+      "sepal length": "6.9",
+      "sepal width": "3.2",
+      "petal length": "5.7",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data242",
-      "x": "3.5",
-      "y": "1.0"
+      "sepal length": "5.6",
+      "sepal width": "2.8",
+      "petal length": "4.9",
+      "petal width": "2.0",
+      "species": "virginica"
     },
     {
-      "label": "data244",
-      "x": "5.9",
-      "y": "3.0"
+      "sepal length": "7.7",
+      "sepal width": "2.8",
+      "petal length": "6.7",
+      "petal width": "2.0",
+      "species": "virginica"
     },
     {
-      "label": "data246",
-      "x": "4.2",
-      "y": "1.5"
+      "sepal length": "6.3",
+      "sepal width": "2.7",
+      "petal length": "4.9",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data248",
-      "x": "6.0",
-      "y": "2.2"
+      "sepal length": "6.7",
+      "sepal width": "3.3",
+      "petal length": "5.7",
+      "petal width": "2.1",
+      "species": "virginica"
     },
     {
-      "label": "data250",
-      "x": "4.0",
-      "y": "1.0"
+      "sepal length": "7.2",
+      "sepal width": "3.2",
+      "petal length": "6.0",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data252",
-      "x": "6.1",
-      "y": "2.9"
+      "sepal length": "6.2",
+      "sepal width": "2.8",
+      "petal length": "4.8",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data254",
-      "x": "4.7",
-      "y": "1.4"
+      "sepal length": "6.1",
+      "sepal width": "3.0",
+      "petal length": "4.9",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data256",
-      "x": "5.6",
-      "y": "2.9"
+      "sepal length": "6.4",
+      "sepal width": "2.8",
+      "petal length": "5.6",
+      "petal width": "2.1",
+      "species": "virginica"
     },
     {
-      "label": "data258",
-      "x": "3.6",
-      "y": "1.3"
+      "sepal length": "7.2",
+      "sepal width": "3.0",
+      "petal length": "5.8",
+      "petal width": "1.6",
+      "species": "virginica"
     },
     {
-      "label": "data260",
-      "x": "6.7",
-      "y": "3.1"
+      "sepal length": "7.4",
+      "sepal width": "2.8",
+      "petal length": "6.1",
+      "petal width": "1.9",
+      "species": "virginica"
     },
     {
-      "label": "data262",
-      "x": "4.4",
-      "y": "1.4"
+      "sepal length": "7.9",
+      "sepal width": "3.8",
+      "petal length": "6.4",
+      "petal width": "2.0",
+      "species": "virginica"
     },
     {
-      "label": "data264",
-      "x": "5.6",
-      "y": "3.0"
+      "sepal length": "6.4",
+      "sepal width": "2.8",
+      "petal length": "5.6",
+      "petal width": "2.2",
+      "species": "virginica"
     },
     {
-      "label": "data266",
-      "x": "4.5",
-      "y": "1.5"
+      "sepal length": "6.3",
+      "sepal width": "2.8",
+      "petal length": "5.1",
+      "petal width": "1.5",
+      "species": "virginica"
     },
     {
-      "label": "data268",
-      "x": "5.8",
-      "y": "2.7"
+      "sepal length": "6.1",
+      "sepal width": "2.6",
+      "petal length": "5.6",
+      "petal width": "1.4",
+      "species": "virginica"
     },
     {
-      "label": "data270",
-      "x": "4.1",
-      "y": "1.0"
+      "sepal length": "7.7",
+      "sepal width": "3.0",
+      "petal length": "6.1",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data272",
-      "x": "6.2",
-      "y": "2.2"
+      "sepal length": "6.3",
+      "sepal width": "3.4",
+      "petal length": "5.6",
+      "petal width": "2.4",
+      "species": "virginica"
     },
     {
-      "label": "data274",
-      "x": "4.5",
-      "y": "1.5"
+      "sepal length": "6.4",
+      "sepal width": "3.1",
+      "petal length": "5.5",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data276",
-      "x": "5.6",
-      "y": "2.5"
+      "sepal length": "6.0",
+      "sepal width": "3.0",
+      "petal length": "4.8",
+      "petal width": "1.8",
+      "species": "virginica"
     },
     {
-      "label": "data278",
-      "x": "3.9",
-      "y": "1.1"
+      "sepal length": "6.9",
+      "sepal width": "3.1",
+      "petal length": "5.4",
+      "petal width": "2.1",
+      "species": "virginica"
     },
     {
-      "label": "data280",
-      "x": "5.9",
-      "y": "3.2"
+      "sepal length": "6.7",
+      "sepal width": "3.1",
+      "petal length": "5.6",
+      "petal width": "2.4",
+      "species": "virginica"
     },
     {
-      "label": "data282",
-      "x": "4.8",
-      "y": "1.8"
+      "sepal length": "6.9",
+      "sepal width": "3.1",
+      "petal length": "5.1",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data284",
-      "x": "6.1",
-      "y": "2.8"
+      "sepal length": "5.8",
+      "sepal width": "2.7",
+      "petal length": "5.1",
+      "petal width": "1.9",
+      "species": "virginica"
     },
     {
-      "label": "data286",
-      "x": "4.0",
-      "y": "1.3"
+      "sepal length": "6.8",
+      "sepal width": "3.2",
+      "petal length": "5.9",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data288",
-      "x": "6.3",
-      "y": "2.5"
+      "sepal length": "6.7",
+      "sepal width": "3.3",
+      "petal length": "5.7",
+      "petal width": "2.5",
+      "species": "virginica"
     },
     {
-      "label": "data290",
-      "x": "4.9",
-      "y": "1.5"
+      "sepal length": "6.7",
+      "sepal width": "3.0",
+      "petal length": "5.2",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data292",
-      "x": "6.1",
-      "y": "2.8"
+      "sepal length": "6.3",
+      "sepal width": "2.5",
+      "petal length": "5.0",
+      "petal width": "1.9",
+      "species": "virginica"
     },
     {
-      "label": "data294",
-      "x": "4.7",
-      "y": "1.2"
+      "sepal length": "6.5",
+      "sepal width": "3.0",
+      "petal length": "5.2",
+      "petal width": "2.0",
+      "species": "virginica"
     },
     {
-      "label": "data296",
-      "x": "6.4",
-      "y": "2.9"
+      "sepal length": "6.2",
+      "sepal width": "3.4",
+      "petal length": "5.4",
+      "petal width": "2.3",
+      "species": "virginica"
     },
     {
-      "label": "data298",
-      "x": "4.3",
-      "y": "1.3"
-    },
-    {
-      "label": "data300",
-      "x": "6.6",
-      "y": "3.0"
-    },
-    {
-      "label": "data302",
-      "x": "4.4",
-      "y": "1.4"
-    },
-    {
-      "label": "data304",
-      "x": "6.8",
-      "y": "2.8"
-    },
-    {
-      "label": "data306",
-      "x": "4.8",
-      "y": "1.4"
-    },
-    {
-      "label": "data308",
-      "x": "6.7",
-      "y": "3.0"
-    },
-    {
-      "label": "data310",
-      "x": "5.0",
-      "y": "1.7"
-    },
-    {
-      "label": "data312",
-      "x": "6.0",
-      "y": "2.9"
-    },
-    {
-      "label": "data314",
-      "x": "4.5",
-      "y": "1.5"
-    },
-    {
-      "label": "data316",
-      "x": "5.7",
-      "y": "2.6"
-    },
-    {
-      "label": "data318",
-      "x": "3.5",
-      "y": "1.0"
-    },
-    {
-      "label": "data320",
-      "x": "5.5",
-      "y": "2.4"
-    },
-    {
-      "label": "data322",
-      "x": "3.8",
-      "y": "1.1"
-    },
-    {
-      "label": "data324",
-      "x": "5.5",
-      "y": "2.4"
-    },
-    {
-      "label": "data326",
-      "x": "3.7",
-      "y": "1.0"
-    },
-    {
-      "label": "data328",
-      "x": "5.8",
-      "y": "2.7"
-    },
-    {
-      "label": "data330",
-      "x": "3.9",
-      "y": "1.2"
-    },
-    {
-      "label": "data332",
-      "x": "6.0",
-      "y": "2.7"
-    },
-    {
-      "label": "data334",
-      "x": "5.1",
-      "y": "1.6"
-    },
-    {
-      "label": "data336",
-      "x": "5.4",
-      "y": "3.0"
-    },
-    {
-      "label": "data338",
-      "x": "4.5",
-      "y": "1.5"
-    },
-    {
-      "label": "data340",
-      "x": "6.0",
-      "y": "3.4"
-    },
-    {
-      "label": "data342",
-      "x": "4.5",
-      "y": "1.6"
-    },
-    {
-      "label": "data344",
-      "x": "6.7",
-      "y": "3.1"
-    },
-    {
-      "label": "data346",
-      "x": "4.7",
-      "y": "1.5"
-    },
-    {
-      "label": "data348",
-      "x": "6.3",
-      "y": "2.3"
-    },
-    {
-      "label": "data350",
-      "x": "4.4",
-      "y": "1.3"
-    },
-    {
-      "label": "data352",
-      "x": "5.6",
-      "y": "3.0"
-    },
-    {
-      "label": "data354",
-      "x": "4.1",
-      "y": "1.3"
-    },
-    {
-      "label": "data356",
-      "x": "5.5",
-      "y": "2.5"
-    },
-    {
-      "label": "data358",
-      "x": "4.0",
-      "y": "1.3"
-    },
-    {
-      "label": "data360",
-      "x": "5.5",
-      "y": "2.6"
-    },
-    {
-      "label": "data362",
-      "x": "4.4",
-      "y": "1.2"
-    },
-    {
-      "label": "data364",
-      "x": "6.1",
-      "y": "3.0"
-    },
-    {
-      "label": "data366",
-      "x": "4.6",
-      "y": "1.4"
-    },
-    {
-      "label": "data368",
-      "x": "5.8",
-      "y": "2.6"
-    },
-    {
-      "label": "data370",
-      "x": "4.0",
-      "y": "1.2"
-    },
-    {
-      "label": "data372",
-      "x": "5.0",
-      "y": "2.3"
-    },
-    {
-      "label": "data374",
-      "x": "3.3",
-      "y": "1.0"
-    },
-    {
-      "label": "data376",
-      "x": "5.6",
-      "y": "2.7"
-    },
-    {
-      "label": "data378",
-      "x": "4.2",
-      "y": "1.3"
-    },
-    {
-      "label": "data380",
-      "x": "5.7",
-      "y": "3.0"
-    },
-    {
-      "label": "data382",
-      "x": "4.2",
-      "y": "1.2"
-    },
-    {
-      "label": "data384",
-      "x": "5.7",
-      "y": "2.9"
-    },
-    {
-      "label": "data386",
-      "x": "4.2",
-      "y": "1.3"
-    },
-    {
-      "label": "data388",
-      "x": "6.2",
-      "y": "2.9"
-    },
-    {
-      "label": "data390",
-      "x": "4.3",
-      "y": "1.3"
-    },
-    {
-      "label": "data392",
-      "x": "5.1",
-      "y": "2.5"
-    },
-    {
-      "label": "data394",
-      "x": "3.0",
-      "y": "1.1"
-    },
-    {
-      "label": "data396",
-      "x": "5.7",
-      "y": "2.8"
-    },
-    {
-      "label": "data398",
-      "x": "4.1",
-      "y": "1.3"
-    },
-    {
-      "label": "data400",
-      "x": "6.3",
-      "y": "3.3"
-    },
-    {
-      "label": "data402",
-      "x": "6.0",
-      "y": "2.5"
-    },
-    {
-      "label": "data404",
-      "x": "5.8",
-      "y": "2.7"
-    },
-    {
-      "label": "data406",
-      "x": "5.1",
-      "y": "1.9"
-    },
-    {
-      "label": "data408",
-      "x": "7.1",
-      "y": "3.0"
-    },
-    {
-      "label": "data410",
-      "x": "5.9",
-      "y": "2.1"
-    },
-    {
-      "label": "data412",
-      "x": "6.3",
-      "y": "2.9"
-    },
-    {
-      "label": "data414",
-      "x": "5.6",
-      "y": "1.8"
-    },
-    {
-      "label": "data416",
-      "x": "6.5",
-      "y": "3.0"
-    },
-    {
-      "label": "data418",
-      "x": "5.8",
-      "y": "2.2"
-    },
-    {
-      "label": "data420",
-      "x": "7.6",
-      "y": "3.0"
-    },
-    {
-      "label": "data422",
-      "x": "6.6",
-      "y": "2.1"
-    },
-    {
-      "label": "data424",
-      "x": "4.9",
-      "y": "2.5"
-    },
-    {
-      "label": "data426",
-      "x": "4.5",
-      "y": "1.7"
-    },
-    {
-      "label": "data428",
-      "x": "7.3",
-      "y": "2.9"
-    },
-    {
-      "label": "data430",
-      "x": "6.3",
-      "y": "1.8"
-    },
-    {
-      "label": "data432",
-      "x": "6.7",
-      "y": "2.5"
-    },
-    {
-      "label": "data434",
-      "x": "5.8",
-      "y": "1.8"
-    },
-    {
-      "label": "data436",
-      "x": "7.2",
-      "y": "3.6"
-    },
-    {
-      "label": "data438",
-      "x": "6.1",
-      "y": "2.5"
-    },
-    {
-      "label": "data440",
-      "x": "6.5",
-      "y": "3.2"
-    },
-    {
-      "label": "data442",
-      "x": "5.1",
-      "y": "2.0"
-    },
-    {
-      "label": "data444",
-      "x": "6.4",
-      "y": "2.7"
-    },
-    {
-      "label": "data446",
-      "x": "5.3",
-      "y": "1.9"
-    },
-    {
-      "label": "data448",
-      "x": "6.8",
-      "y": "3.0"
-    },
-    {
-      "label": "data450",
-      "x": "5.5",
-      "y": "2.1"
-    },
-    {
-      "label": "data452",
-      "x": "5.7",
-      "y": "2.5"
-    },
-    {
-      "label": "data454",
-      "x": "5.0",
-      "y": "2.0"
-    },
-    {
-      "label": "data456",
-      "x": "5.8",
-      "y": "2.8"
-    },
-    {
-      "label": "data458",
-      "x": "5.1",
-      "y": "2.4"
-    },
-    {
-      "label": "data460",
-      "x": "6.4",
-      "y": "3.2"
-    },
-    {
-      "label": "data462",
-      "x": "5.3",
-      "y": "2.3"
-    },
-    {
-      "label": "data464",
-      "x": "6.5",
-      "y": "3.0"
-    },
-    {
-      "label": "data466",
-      "x": "5.5",
-      "y": "1.8"
-    },
-    {
-      "label": "data468",
-      "x": "7.7",
-      "y": "3.8"
-    },
-    {
-      "label": "data470",
-      "x": "6.7",
-      "y": "2.2"
-    },
-    {
-      "label": "data472",
-      "x": "7.7",
-      "y": "2.6"
-    },
-    {
-      "label": "data474",
-      "x": "6.9",
-      "y": "2.3"
-    },
-    {
-      "label": "data476",
-      "x": "6.0",
-      "y": "2.2"
-    },
-    {
-      "label": "data478",
-      "x": "5.0",
-      "y": "1.5"
-    },
-    {
-      "label": "data480",
-      "x": "6.9",
-      "y": "3.2"
-    },
-    {
-      "label": "data482",
-      "x": "5.7",
-      "y": "2.3"
-    },
-    {
-      "label": "data484",
-      "x": "5.6",
-      "y": "2.8"
-    },
-    {
-      "label": "data486",
-      "x": "4.9",
-      "y": "2.0"
-    },
-    {
-      "label": "data488",
-      "x": "7.7",
-      "y": "2.8"
-    },
-    {
-      "label": "data490",
-      "x": "6.7",
-      "y": "2.0"
-    },
-    {
-      "label": "data492",
-      "x": "6.3",
-      "y": "2.7"
-    },
-    {
-      "label": "data494",
-      "x": "4.9",
-      "y": "1.8"
-    },
-    {
-      "label": "data496",
-      "x": "6.7",
-      "y": "3.3"
-    },
-    {
-      "label": "data498",
-      "x": "5.7",
-      "y": "2.1"
-    },
-    {
-      "label": "data500",
-      "x": "7.2",
-      "y": "3.2"
-    },
-    {
-      "label": "data502",
-      "x": "6.0",
-      "y": "1.8"
-    },
-    {
-      "label": "data504",
-      "x": "6.2",
-      "y": "2.8"
-    },
-    {
-      "label": "data506",
-      "x": "4.8",
-      "y": "1.8"
-    },
-    {
-      "label": "data508",
-      "x": "6.1",
-      "y": "3.0"
-    },
-    {
-      "label": "data510",
-      "x": "4.9",
-      "y": "1.8"
-    },
-    {
-      "label": "data512",
-      "x": "6.4",
-      "y": "2.8"
-    },
-    {
-      "label": "data514",
-      "x": "5.6",
-      "y": "2.1"
-    },
-    {
-      "label": "data516",
-      "x": "7.2",
-      "y": "3.0"
-    },
-    {
-      "label": "data518",
-      "x": "5.8",
-      "y": "1.6"
-    },
-    {
-      "label": "data520",
-      "x": "7.4",
-      "y": "2.8"
-    },
-    {
-      "label": "data522",
-      "x": "6.1",
-      "y": "1.9"
-    },
-    {
-      "label": "data524",
-      "x": "7.9",
-      "y": "3.8"
-    },
-    {
-      "label": "data526",
-      "x": "6.4",
-      "y": "2.0"
-    },
-    {
-      "label": "data528",
-      "x": "6.4",
-      "y": "2.8"
-    },
-    {
-      "label": "data530",
-      "x": "5.6",
-      "y": "2.2"
-    },
-    {
-      "label": "data532",
-      "x": "6.3",
-      "y": "2.8"
-    },
-    {
-      "label": "data534",
-      "x": "5.1",
-      "y": "1.5"
-    },
-    {
-      "label": "data536",
-      "x": "6.1",
-      "y": "2.6"
-    },
-    {
-      "label": "data538",
-      "x": "5.6",
-      "y": "1.4"
-    },
-    {
-      "label": "data540",
-      "x": "7.7",
-      "y": "3.0"
-    },
-    {
-      "label": "data542",
-      "x": "6.1",
-      "y": "2.3"
-    },
-    {
-      "label": "data544",
-      "x": "6.3",
-      "y": "3.4"
-    },
-    {
-      "label": "data546",
-      "x": "5.6",
-      "y": "2.4"
-    },
-    {
-      "label": "data548",
-      "x": "6.4",
-      "y": "3.1"
-    },
-    {
-      "label": "data550",
-      "x": "5.5",
-      "y": "1.8"
-    },
-    {
-      "label": "data552",
-      "x": "6.0",
-      "y": "3.0"
-    },
-    {
-      "label": "data554",
-      "x": "4.8",
-      "y": "1.8"
-    },
-    {
-      "label": "data556",
-      "x": "6.9",
-      "y": "3.1"
-    },
-    {
-      "label": "data558",
-      "x": "5.4",
-      "y": "2.1"
-    },
-    {
-      "label": "data560",
-      "x": "6.7",
-      "y": "3.1"
-    },
-    {
-      "label": "data562",
-      "x": "5.6",
-      "y": "2.4"
-    },
-    {
-      "label": "data564",
-      "x": "6.9",
-      "y": "3.1"
-    },
-    {
-      "label": "data566",
-      "x": "5.1",
-      "y": "2.3"
-    },
-    {
-      "label": "data568",
-      "x": "5.8",
-      "y": "2.7"
-    },
-    {
-      "label": "data570",
-      "x": "5.1",
-      "y": "1.9"
-    },
-    {
-      "label": "data572",
-      "x": "6.8",
-      "y": "3.2"
-    },
-    {
-      "label": "data574",
-      "x": "5.9",
-      "y": "2.3"
-    },
-    {
-      "label": "data576",
-      "x": "6.7",
-      "y": "3.3"
-    },
-    {
-      "label": "data578",
-      "x": "5.7",
-      "y": "2.5"
-    },
-    {
-      "label": "data580",
-      "x": "6.7",
-      "y": "3.0"
-    },
-    {
-      "label": "data582",
-      "x": "5.2",
-      "y": "2.3"
-    },
-    {
-      "label": "data584",
-      "x": "6.3",
-      "y": "2.5"
-    },
-    {
-      "label": "data586",
-      "x": "5.0",
-      "y": "1.9"
-    },
-    {
-      "label": "data588",
-      "x": "6.5",
-      "y": "3.0"
-    },
-    {
-      "label": "data590",
-      "x": "5.2",
-      "y": "2.0"
-    },
-    {
-      "label": "data592",
-      "x": "6.2",
-      "y": "3.4"
-    },
-    {
-      "label": "data594",
-      "x": "5.4",
-      "y": "2.3"
-    },
-    {
-      "label": "data596",
-      "x": "5.9",
-      "y": "3.0"
-    },
-    {
-      "label": "data598",
-      "x": "5.1",
-      "y": "1.8"
+      "sepal length": "5.9",
+      "sepal width": "3.0",
+      "petal length": "5.1",
+      "petal width": "1.8",
+      "species": "virginica"
     }
   ]
 }

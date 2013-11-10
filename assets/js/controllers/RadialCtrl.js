@@ -27,13 +27,13 @@ define(['backbone-mvc', 'figue', 'js/models/RadialModel', 'js/views/RadialView']
 
                 var root = figue.agglomerate(labels, vectors, figue.EUCLIDIAN_DISTANCE, figue.SINGLE_LINKAGE);
 
+                //Just for demo, so convert clustering data for radial clustergram in client side.
                 self.model = new RadialModel(root);
-                /*self.view = new RadialView({
-                    model: this.model,
-                    el: $('#kicks')
+                self.view = new RadialView({
+                    model: self.model,
+                    el: $('#radial-clustergram')
                 });
                 self.view.render();
-                */
 
                 // Render the dendogram in the page (note: pre is handled differently by IE and the rest of the browsers)
                 var pre = $('#mypre');

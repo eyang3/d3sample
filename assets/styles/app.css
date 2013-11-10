@@ -1,3 +1,6 @@
-body, td, a, p {
-    font: 13px/27px Arial, sans-serif;
+.basic-frame {
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 10px;
+    margin: 5px;
 }
