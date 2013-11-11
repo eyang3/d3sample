@@ -4,11 +4,12 @@
  * @return {object}
  */
 
-define(['d3', 'backbone-mvc', 'js/views/TrellisView', 'js/models/IrisModel'], function(d3, BackboneMVC, TrellisView, IrisModel) {
+define(['d3', 'backbone-mvc', 'js/views/TrellisView', 'js/models/IrisModel', 'js/models/IrisCollection'], function(d3, BackboneMVC, TrellisView, IrisModel, IrisCollection) {
     var TrellisCtrl = BackboneMVC.Controller.extend({
         name: 'TrellisCtrl',
         /* the only mandatory field */
 
+        // model and view here are M and V in MVC architect.
         model: null,
         view: null,
 
@@ -16,7 +17,7 @@ define(['d3', 'backbone-mvc', 'js/views/TrellisView', 'js/models/IrisModel'], fu
             var self = this;
 
             d3.json('/iris/find/', function(error, data) {
-                self.model = new IrisModel(data[0].iris);
+                self.model = new IrisCollection(data[0].iris, { model: IrisModel });
                 self.view = new TrellisView({
                     model: self.model,
                     el: $('#trellis')

@@ -30,10 +30,7 @@ define(['backbone', 'd3', 'css!styles/trellis.css'], function(Backbone, d3) {
 
             var color = d3.scale.category10();
 
-            renderSVG(self.model.attributes);
-
-            //d3.json('/iris/find/', function(error, data) {
-            //    var data = data[0].iris;
+            renderSVG(self.model.toJSON());
 
             function renderSVG(data){
                 var domainByTrait = {},
@@ -123,14 +120,10 @@ define(['backbone', 'd3', 'css!styles/trellis.css'], function(Backbone, d3) {
                         .attr('width', size - padding)
                         .attr('height', size - padding);
 
-                    console.log('time to render circle');
                     cell.selectAll('circle')
                         .data(data)
                         .enter().append('circle')
                         .attr('cx', function(d) {
-                    //console.log(d);
-                    //console.log(p);
-                    //console.log(x);
                             return x(d[p.x]);
                         })
                         .attr('cy', function(d) {

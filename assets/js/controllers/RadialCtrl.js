@@ -37,7 +37,7 @@ define(['backbone-mvc', 'figue', 'js/models/RadialModel', 'js/views/RadialView']
 
                 // Render the dendogram in the page (note: pre is handled differently by IE and the rest of the browsers)
                 var pre = $('#mypre');
-                pre.html('dendogram');
+                pre.html('mypre');
             });
         },
 
