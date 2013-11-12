@@ -49,13 +49,12 @@ requirejs.config({
     }
 });
 
-require(['backbone', 'backbone-mvc', 'js/controllers/TrellisCtrl', 'js/controllers/RadialCtrl'], function(Backbone, BackboneMVC, TrellisCtrl, RadialCtrl) {
+require(['backbone', 'backbone-mvc', 'js/controllers/IrisCtrl'], function(Backbone, BackboneMVC, IrisCtrl) {
     $(document).ready(function() {
         // Start the new automatic router and Backbone.history.
         var router = new BackboneMVC.Router();
         Backbone.history.start();
         // Just invoke controllers to create whole app.
-        var trellisCtrl = new TrellisCtrl();
-        var radialCtrl = new RadialCtrl();
+        var irisCtrl = new IrisCtrl();
     });
 });

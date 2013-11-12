@@ -1,12 +1,12 @@
 /**
- * TrellisCtrl
+ * IrisCtrl
  *
  * @return {object}
  */
 
-define(['d3', 'backbone-mvc', 'js/views/TrellisView', 'js/models/IrisModel', 'js/models/IrisCollection'], function(d3, BackboneMVC, TrellisView, IrisModel, IrisCollection) {
-    var TrellisCtrl = BackboneMVC.Controller.extend({
-        name: 'TrellisCtrl',
+define(['d3', 'backbone-mvc', 'js/views/IrisView', 'js/models/IrisModel', 'js/models/IrisCollection'], function(d3, BackboneMVC, IrisView, IrisModel, IrisCollection) {
+    var IrisCtrl = BackboneMVC.Controller.extend({
+        name: 'IrisCtrl',
         /* the only mandatory field */
 
         // model and view here are M and V in MVC architect.
@@ -18,9 +18,9 @@ define(['d3', 'backbone-mvc', 'js/views/TrellisView', 'js/models/IrisModel', 'js
 
             d3.json('/iris/find/', function(error, data) {
                 self.model = new IrisCollection(data[0].iris, { model: IrisModel });
-                self.view = new TrellisView({
-                    model: self.model,
-                    el: $('#trellis')
+                self.view = new IrisView({
+                    model: self.model.toJSON(),
+                    el: $('#iris')
                 });
                 self.view.render();
             });
@@ -43,5 +43,5 @@ define(['d3', 'backbone-mvc', 'js/views/TrellisView', 'js/models/IrisModel', 'js
             alert('You just use view to shoot a target and trigger the action of controller.');
         }
     });
-    return TrellisCtrl;
+    return IrisCtrl;
 });
