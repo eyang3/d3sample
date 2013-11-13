@@ -10,12 +10,12 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
         render: function() {
             this.$el.html(this.template());
 
-            this.renderTrellis(this.model);
-            this.renderRadialClustergram();
+            this._renderTrellis(this.model);
+            this._renderRadialClustergram();
             return this;
         },
 
-        renderRadialClustergram: function(data) {
+        _renderRadialClustergram: function(data) {
             // Dimensions of sunburst.
             var width = 750;
             var height = 600;
@@ -399,7 +399,7 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
             return this;
         },
 
-        renderTrellis: function(data) {
+        _renderTrellis: function(data) {
             var width = 960,
                 size = 150,
                 padding = 19.5;
