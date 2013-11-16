@@ -17,6 +17,7 @@ define(['d3', 'backbone-mvc', 'js/views/IrisView', 'js/models/IrisModel', 'js/mo
             var self = this;
 
             d3.json('/iris/find/', function(error, data) {
+                // Just for making demo easier, but storing all data in one object is not good.
                 self.model = new IrisCollection(data[0].iris, { model: IrisModel });
                 self.view = new IrisView({
                     model: self.model.toJSON(),
@@ -25,23 +26,8 @@ define(['d3', 'backbone-mvc', 'js/views/IrisView', 'js/models/IrisModel', 'js/mo
                 self.view.render();
             });
 
-        },
-
-        /**
-         * This is a standard action method, it is invoked
-         * automatically if url matches
-         */
-        hello: function() {
-            this._privateMethod();
-        },
-
-        /**
-         * This function will remain untouched, the router cannot see
-         * this method
-         */
-        _privateMethod: function() {
-            alert('You just use view to shoot a target and trigger the action of controller.');
         }
+
     });
     return IrisCtrl;
 });

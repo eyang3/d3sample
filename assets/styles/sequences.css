@@ -13,11 +13,6 @@ body {
   width: 750px;
 }
 
-#sidebar {
-  float: right;
-  width: 100px;
-}
-
 #sequence text {
   font-weight: 600;
   fill: #fff;
