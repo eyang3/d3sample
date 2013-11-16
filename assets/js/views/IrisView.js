@@ -4,18 +4,22 @@
  * @return {object}
  */
 
-define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!styles/sequences.css'], function(Backbone, d3, Templates) {
+define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', 'css!styles/sequences.css'], function(Backbone, d3, figue, Templates) {
     var IrisView = Backbone.View.extend({
         template: Templates.iris,
         render: function() {
             this.$el.html(this.template());
 
             this._renderTrellis(this.model);
-            this._renderRadialClustergram();
+
+            // Cluster and build hierachy data for radial clustergram.
+            var hierachyData = this._buildHierachy(this.model);
+debugger;
+            this._renderRadialClustergram(hierachyData);
             return this;
         },
 
-        _renderRadialClustergram: function(data) {
+        _renderRadialClustergram: function(hierachy) {
             // Dimensions of sunburst.
             var width = 750;
             var height = 600;
@@ -29,23 +33,22 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
                 t: 10
             };
 
-            // Mapping of step names to colors.
+            // Mapping of step names to colors which are top 3 of d3.scale.category10().
             var colors = {
-                'home': '#5687d1',
-                'product': '#7b615c',
-                'search': '#de783b',
-                'account': '#6ab975',
-                'other': '#a173d1',
-                'end': '#bbbbbb'
+                'setosa': '#1f77b4',
+                'versicolor': '#ff7f0e',
+                'virginica': '#2ca02c',
+
+                'species': '#7f7f7f'
             };
 
             // Total size of all segments; we set this later, after loading the data.
             var totalSize = 0;
 
-            var vis = d3.select('#radial-clustergram #chart').append('svg:svg')
+            var vis = d3.select('#radial-clustergram #chart').append('svg')
                 .attr('width', width)
                 .attr('height', height)
-                .append('svg:g')
+                .append('g')
                 .attr('id', 'container')
                 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
@@ -69,13 +72,10 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
                     return Math.sqrt(d.y + d.dy);
                 });
 
-            // Use d3.text and d3.csv.parseRows so that we do not need to have a header
-            // row, and can receive the csv as an array of arrays.
-            //var json = buildHierarchy(csv);
-            var json = {
+            /*
+            var hierachy = {
                 "name": "flare",
                 "children": [{
-                    "name": "analytics",
                     "size": 7000,
                     "children": [{
                         "name": "cluster",
@@ -102,32 +102,31 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
                     "size": 2000
                 }]
             };
-            createVisualization(json);
+            */
+            createVisualization(hierachy);
 
             // Main function to draw and set up the visualization, once we have the data.
 
-            function createVisualization(json) {
+            function createVisualization(hierachy) {
 
                 // Basic setup of page elements.
                 initializeBreadcrumbTrail();
-                drawLegend();
-                d3.select('#togglelegend').on('click', toggleLegend);
 
                 // Bounding circle underneath the sunburst, to make it easier to detect
                 // when the mouse leaves the parent g.
-                vis.append('svg:circle')
+                vis.append('circle')
                     .attr('r', radius)
                     .style('opacity', 0);
 
                 // For efficiency, filter nodes to keep only those large enough to see.
-                var nodes = partition.nodes(json)
+                var nodes = partition.nodes(hierachy)
                     .filter(function(d) {
                         return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
                     });
 
-                var path = vis.data([json]).selectAll('path')
+                var path = vis.data([hierachy]).selectAll('path')
                     .data(nodes)
-                    .enter().append('svg:path')
+                    .enter().append('path')
                     .attr('display', function(d) {
                         return d.depth ? null : 'none';
                     })
@@ -218,12 +217,12 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
 
             function initializeBreadcrumbTrail() {
                 // Add the svg area.
-                var trail = d3.select('#sequence').append('svg:svg')
-                    .attr('width', width)
+                var trail = d3.select('#sequence').append('svg')
+                    .attr('width', 900)
                     .attr('height', 50)
                     .attr('id', 'trail');
                 // Add the label at the end, for the percentage.
-                trail.append('svg:text')
+                trail.append('text')
                     .attr('id', 'endlabel')
                     .style('fill', '#000');
             }
@@ -255,15 +254,15 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
                     });
 
                 // Add breadcrumb and label for entering nodes.
-                var entering = g.enter().append('svg:g');
+                var entering = g.enter().append('g');
 
-                entering.append('svg:polygon')
+                entering.append('polygon')
                     .attr('points', breadcrumbPoints)
                     .style('fill', function(d) {
                         return colors[d.name];
                     });
 
-                entering.append('svg:text')
+                entering.append('text')
                     .attr('x', (b.w + b.t) / 2)
                     .attr('y', b.h / 2)
                     .attr('dy', '0.35em')
@@ -294,109 +293,37 @@ define(['backbone', 'd3', 'templates/iris', 'css!styles/trellis.css', 'css!style
 
             }
 
-            function drawLegend() {
-
-                // Dimensions of legend item: width, height, spacing, radius of rounded rect.
-                var li = {
-                    w: 75,
-                    h: 30,
-                    s: 3,
-                    r: 3
-                };
-
-                var legend = d3.select('#legend').append('svg:svg')
-                    .attr('width', li.w)
-                    .attr('height', d3.keys(colors).length * (li.h + li.s));
-
-                var g = legend.selectAll('g')
-                    .data(d3.entries(colors))
-                    .enter().append('svg:g')
-                    .attr('transform', function(d, i) {
-                        return 'translate(0,' + i * (li.h + li.s) + ')';
-                    });
-
-                g.append('svg:rect')
-                    .attr('rx', li.r)
-                    .attr('ry', li.r)
-                    .attr('width', li.w)
-                    .attr('height', li.h)
-                    .style('fill', function(d) {
-                        return d.value;
-                    });
-
-                g.append('svg:text')
-                    .attr('x', li.w / 2)
-                    .attr('y', li.h / 2)
-                    .attr('dy', '0.35em')
-                    .attr('text-anchor', 'middle')
-                    .text(function(d) {
-                        return d.key;
-                    });
-            }
-
-            function toggleLegend() {
-                var legend = d3.select('#legend');
-                if (legend.style('visibility') == 'hidden') {
-                    legend.style('visibility', '');
-                } else {
-                    legend.style('visibility', 'hidden');
-                }
-            }
-
-            // Take a 2-column CSV and transform it into a hierarchical structure suitable
-            // for a partition layout. The first column is a sequence of step names, from
-            // root to leaf, separated by hyphens. The second column is a count of how
-            // often that sequence occurred.
-
-            function buildHierarchy(csv) {
-                var root = {
-                    'name': 'root',
-                    'children': []
-                };
-                for (var i = 0; i < csv.length; i++) {
-                    var sequence = csv[i][0];
-                    var size = +csv[i][1];
-                    if (isNaN(size)) { // e.g. if this is a header row
-                        continue;
-                    }
-                    var parts = sequence.split('-');
-                    var currentNode = root;
-                    for (var j = 0; j < parts.length; j++) {
-                        var children = currentNode['children'];
-                        var nodeName = parts[j];
-                        var childNode;
-                        if (j + 1 < parts.length) {
-                            // Not yet at the end of the sequence; move down the tree.
-                            var foundChild = false;
-                            for (var k = 0; k < children.length; k++) {
-                                if (children[k]['name'] == nodeName) {
-                                    childNode = children[k];
-                                    foundChild = true;
-                                    break;
-                                }
-                            }
-                            // If we don't already have a child node for this branch, create it.
-                            if (!foundChild) {
-                                childNode = {
-                                    'name': nodeName,
-                                    'children': []
-                                };
-                                children.push(childNode);
-                            }
-                            currentNode = childNode;
-                        } else {
-                            // Reached the end of the sequence; create a leaf node.
-                            childNode = {
-                                'name': nodeName,
-                                'size': size
-                            };
-                            children.push(childNode);
-                        }
-                    }
-                }
-                return root;
-            };
             return this;
+        },
+
+        _buildHierachy: function(data) {
+            // Just select petal width and sepal length for clustering example.
+            var labels = new Array ;
+            var vectors = new Array ;
+            for (var i = 0 ; i < data.length ; i++) {
+                labels[i] = data[i]['species'] ;
+                vectors[i] = [ data[i]['petal width'] , data[i]['sepal length']] ;
+            }
+            var root = figue.agglomerate(labels, vectors , figue.EUCLIDIAN_DISTANCE,figue.SINGLE_LINKAGE);
+
+            // Add children for d3 sunburst
+            addFieldsForSunburst(root);
+
+            function addFieldsForSunburst(node){
+                if(node.label !== -1) {
+                    node.name = node.label;
+                } else {
+                    node.name = 'species';
+                }
+
+                if(node.left && node.right) {
+                    node.children = [node.left, node.right];
+                    addFieldsForSunburst(node.children[0]);
+                    addFieldsForSunburst(node.children[1]);
+                }
+            }
+
+            return root;
         },
 
         _renderTrellis: function(data) {
