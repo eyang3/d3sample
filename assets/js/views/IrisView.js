@@ -73,37 +73,6 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
                     return Math.sqrt(d.y + d.dy);
                 });
 
-            /*
-            var hierachy = {
-                "name": "flare",
-                "children": [{
-                    "size": 7000,
-                    "children": [{
-                        "name": "cluster",
-                        "size": 6800,
-                        "children": [{
-                            "name": "AgglomerativeCluster",
-                            "size": 3938
-                        }, {
-                            "name": "CommunityStructure",
-                            "size": 3812
-                        }, {
-                            "name": "HierarchicalCluster",
-                            "size": 6714
-                        }, {
-                            "name": "MergeEdge",
-                            "size": 743
-                        }]
-                    }, {
-                        "name": "cluster2",
-                        "size": 3000
-                    }]
-                }, {
-                    "name": "analytics2",
-                    "size": 2000
-                }]
-            };
-            */
             createVisualization(hierachy);
 
             // Main function to draw and set up the visualization, once we have the data.
