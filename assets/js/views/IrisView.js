@@ -14,8 +14,9 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
 
             // Cluster and build hierachy data for radial clustergram.
             var hierachyData = this._buildHierachy(this.model);
-debugger;
+
             this._renderRadialClustergram(hierachyData);
+
             return this;
         },
 
