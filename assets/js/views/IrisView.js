@@ -1,12 +1,15 @@
 /**
  * IrisView
  *
- * @return {object}
+ * IrisView will take care how to present data.
+ *
+ * @class IrisView
  */
 
 define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', 'css!styles/sequences.css'], function(Backbone, d3, figue, Templates) {
     var IrisView = Backbone.View.extend({
         template: Templates.iris,
+
         render: function() {
             this.$el.html(this.template());
 
@@ -20,6 +23,11 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
             return this;
         },
 
+        /**
+         * _renderRadialClustergram will render radial clustergram.
+         * @method _renderRadialClustergram
+         * @param {Object} hierachy The hierachy structure of the data.
+         */
         _renderRadialClustergram: function(hierachy) {
             // Dimensions of sunburst.
             var width = 750;
@@ -106,7 +114,8 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
                         return colors[d.name];
                     })
                     .style('opacity', 1)
-                    .on('mouseover', mouseover);
+                    .on('mouseover', mouseover)
+                    .on('click', selectCluster);
 
                 // Add the mouseleave handler to the bounding circle.
                 d3.select('#container').on('mouseleave', mouseleave);
@@ -114,6 +123,18 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
                 // Get total size of the tree = value of root node from partition.
                 totalSize = path.node().__data__.value;
             };
+
+            // Highlight the points in trellis.
+
+            function selectCluster(d){
+                // Calculate the area which contains all points in this cluster. The area could be a circle.
+                // In order to hight the area easily for demo, let's just assume the area is a square.
+                var area = [ [ d.centroid[0] - d.dist, d.centroid[1] - d.dist], [ d.centroid[0] + d.dist, d.centroid[1] + d.dist] ];
+
+                d3.selectAll('#trellis circle').classed('hidden', function(d) {
+                    return area[0][0] > d['petal width'] || d['petal width'] > area[1][0] || area[0][1] > d['sepal length'] || d['sepal length'] > area[1][1];
+                });
+            }
 
             // Fade all but the current sequence, and show it in the breadcrumb trail.
 
@@ -266,6 +287,12 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
             return this;
         },
 
+        /**
+         * Build hierachy structure of the data. Data will be clustered first and add necessary data fields into it.
+         *
+         * @method _buildHierachy
+         * @param {Array} data The data collection.
+         */
         _buildHierachy: function(data) {
             // Just select petal width and sepal length for clustering example.
             var labels = new Array ;
@@ -296,6 +323,12 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
             return root;
         },
 
+        /**
+         * Render Trellis.
+         *
+         * @method _renderTrellis
+         * @param {Array} data The data collection.
+         */
         _renderTrellis: function(data) {
             var width = 960,
                 size = 150,
@@ -437,6 +470,7 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
 
             function brushmove(p) {
                 var e = brush.extent();
+                //svg.selectAll('circle').classed('hidden', function(d) { return 2.5 > d['sepal width'] || d['sepal width'] > 3.0 || 1.0 > d['petal width'] || d['petal width'] > 2.0; });
                 svg.selectAll('circle').classed('hidden', function(d) {
                     return e[0][0] > d[p.x] || d[p.x] > e[1][0] || e[0][1] > d[p.y] || d[p.y] > e[1][1];
                 });

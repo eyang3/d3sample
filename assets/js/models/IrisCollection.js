@@ -1,7 +1,7 @@
 /**
  * IrisCollection
  *
- * @return {object}
+ * @class IrisCollection
  */
 
 define(['backbone'], function(Backbone) {
