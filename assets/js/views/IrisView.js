@@ -127,7 +127,7 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
             // Highlight the points in trellis.
 
             function selectCluster(d){
-                // Find all species and store them in an Array. Better way could be calculating the area.
+                // Find all species and store them in an Array which is not a good method. The better way could be calculating the area.
                 var species = [];
 
                 collectSpecies(d);
@@ -146,13 +146,12 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
                 }
 
                 d3.selectAll('#trellis circle').classed('hidden', function(d) {
-                    var hidden = true;
                     for(var i = 0; i< species.length; i++) {
                         if(species[i]['petal width'] == d['petal width'] && species[i]['sepal length'] == d['sepal length']) {
-                            hidden = false;
+                            return false;
                         }
                     }
-                    return hidden;
+                    return true;
                 });
             }
 
