@@ -127,12 +127,32 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
             // Highlight the points in trellis.
 
             function selectCluster(d){
-                // Calculate the area which contains all points in this cluster. The area could be a circle.
-                // In order to hight the area easily for demo, let's just assume the area is a square.
-                var area = [ [ d.centroid[0] - d.dist, d.centroid[1] - d.dist], [ d.centroid[0] + d.dist, d.centroid[1] + d.dist] ];
+                // Find all species and store them in an Array. Better way could be calculating the area.
+                var species = [];
+
+                collectSpecies(d);
+
+                function collectSpecies(node){
+                    if(node.label !== -1){
+                        species.push({'petal width': node.centroid[0], 'sepal length': node.centroid[1]});
+                    } else {
+                        if(node.left) {
+                            collectSpecies(node.left);
+                        }
+                        if(node.right) {
+                            collectSpecies(node.right);
+                        }
+                    }
+                }
 
                 d3.selectAll('#trellis circle').classed('hidden', function(d) {
-                    return area[0][0] > d['petal width'] || d['petal width'] > area[1][0] || area[0][1] > d['sepal length'] || d['sepal length'] > area[1][1];
+                    var hidden = true;
+                    for(var i = 0; i< species.length; i++) {
+                        if(species[i]['petal width'] == d['petal width'] && species[i]['sepal length'] == d['sepal length']) {
+                            hidden = false;
+                        }
+                    }
+                    return hidden;
                 });
             }
 
@@ -470,7 +490,6 @@ define(['backbone', 'd3', 'figue', 'templates/iris', 'css!styles/trellis.css', '
 
             function brushmove(p) {
                 var e = brush.extent();
-                //svg.selectAll('circle').classed('hidden', function(d) { return 2.5 > d['sepal width'] || d['sepal width'] > 3.0 || 1.0 > d['petal width'] || d['petal width'] > 2.0; });
                 svg.selectAll('circle').classed('hidden', function(d) {
                     return e[0][0] > d[p.x] || d[p.x] > e[1][0] || e[0][1] > d[p.y] || d[p.y] > e[1][1];
                 });
